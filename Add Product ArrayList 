@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+
+public class Item {
+
+    static ArrayList<String> names = new ArrayList<>();
+    static ArrayList<Double> prices = new ArrayList<>();
+
+    public static void main(String[] args) {
+
+        names.add("Rice 5kg");
+        prices.add(350.0);
+
+        names.add("Milk 1L");
+        prices.add(60.0);
+
+        names.add("Bread");
+        prices.add(45.0);
+
+        System.out.println("LIFEBRIDGE MART PRODUCTS");
+
+        for (int i = 0; i < names.size(); i++) {
+            System.out.println(
+                (i + 1) + ". " +
+                names.get(i) +
+                " - Rs." + prices.get(i)
+            );
+        }
+    }
+}
