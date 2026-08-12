@@ -1,4 +1,4 @@
-# Malathi-LifeBridge-Mart
+# Malathi Mart
 AI-powered smart marketplace for customers and local stores
 
 import java.util.ArrayList;
