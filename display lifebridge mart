@@ -1,0 +1,12 @@
+public class Item {
+
+    public static void main(String[] args) {
+
+        System.out.println("================================");
+        System.out.println("       LIFEBRIDGE MART");
+        System.out.println(" Smart Essential Shopping");
+        System.out.println("================================");
+
+        System.out.println("Welcome to LifeBridge Mart!");
+    }
+}
