@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Item {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int choice;
+
+        do {
+            System.out.println("\n===== LIFEBRIDGE MART =====");
+            System.out.println("1. View Products");
+            System.out.println("2. Search Product");
+            System.out.println("3. Exit");
+
+            System.out.print("Enter choice: ");
+            choice = sc.nextInt();
+            sc.nextLine();
+
+            if (choice == 1) {
+                System.out.println("Products will be displayed.");
+            }
+            else if (choice == 2) {
+                System.out.println("Search feature selected.");
+            }
+            else if (choice == 3) {
+                System.out.println("Thank you!");
+            }
+            else {
+                System.out.println("Invalid choice!");
+            }
+
+        } while (choice != 3);
+    }
+}
