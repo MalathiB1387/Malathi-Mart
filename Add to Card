@@ -1,0 +1,21 @@
+static ArrayList<Integer> cart = new ArrayList<>();
+
+static void addToCart() {
+
+    System.out.print("Enter product number: ");
+    int product = sc.nextInt();
+
+    if (product >= 1 && product <= names.size()) {
+
+        cart.add(product - 1);
+
+        System.out.println(
+            names.get(product - 1) +
+            " added to cart successfully!"
+        );
+
+    } else {
+
+        System.out.println("Invalid product number.");
+    }
+}
