@@ -1,0 +1,13 @@
+static void trackOrder() {
+
+    System.out.println("\n===== ORDER TRACKING =====");
+
+    System.out.println("Order ID: LB1001");
+    System.out.println("1. Order Placed       ✓");
+    System.out.println("2. Store Confirmed    ✓");
+    System.out.println("3. Preparing Order    ✓");
+    System.out.println("4. Out for Delivery   →");
+    System.out.println("5. Delivered          Pending");
+
+    System.out.println("==========================");
+}
