@@ -1,0 +1,23 @@
+static void placeOrder() {
+
+    if (cart.isEmpty()) {
+
+        System.out.println("Your cart is empty.");
+        return;
+    }
+
+    double total = 0;
+
+    for (int index : cart) {
+        total += prices.get(index);
+    }
+
+    System.out.println("\n===== ORDER CONFIRMED =====");
+
+    System.out.println("Order ID: LB1001");
+    System.out.println("Total Amount: Rs." + total);
+    System.out.println("Status: Order Placed");
+    System.out.println("Estimated Delivery: 30-45 minutes");
+
+    cart.clear();
+}
