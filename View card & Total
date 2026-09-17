@@ -1,0 +1,24 @@
+static void viewCart() {
+
+    System.out.println("\n===== YOUR CART =====");
+
+    if (cart.isEmpty()) {
+        System.out.println("Cart is empty.");
+        return;
+    }
+
+    double total = 0;
+
+    for (int index : cart) {
+
+        System.out.println(
+            names.get(index) +
+            " - Rs." + prices.get(index)
+        );
+
+        total += prices.get(index);
+    }
+
+    System.out.println("---------------------");
+    System.out.println("Total: Rs." + total);
+}
