@@ -1,0 +1,14 @@
+static void recommendations() {
+
+    System.out.println("\n===== AI RECOMMENDATIONS =====");
+
+    System.out.println("Based on popular shopping patterns:");
+
+    System.out.println("1. Rice 5kg    - Rs.350");
+    System.out.println("2. Milk 1L     - Rs.60");
+    System.out.println("3. Cooking Oil - Rs.150");
+    System.out.println("4. Biscuits    - Rs.30");
+
+    System.out.println("\nAI Suggestion:");
+    System.out.println("Milk + Bread can be a useful combination.");
+}
