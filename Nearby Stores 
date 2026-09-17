@@ -1,0 +1,9 @@
+static void nearbyStores() {
+
+    System.out.println("\n===== NEARBY STORES =====");
+
+    System.out.println("1. Green Mart   - 0.4 km");
+    System.out.println("2. Sakthi Store - 0.8 km");
+    System.out.println("3. City Mart    - 1.2 km");
+    System.out.println("4. Fresh Store  - 1.5 km");
+}
