@@ -1,0 +1,44 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Item {
+
+    static ArrayList<String> names = new ArrayList<>();
+    static ArrayList<Double> prices = new ArrayList<>();
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        names.add("Rice 5kg");
+        prices.add(350.0);
+
+        names.add("Milk 1L");
+        prices.add(60.0);
+
+        names.add("Bread");
+        prices.add(45.0);
+
+        System.out.print("Enter product name: ");
+        String search = sc.nextLine().toLowerCase();
+
+        boolean found = false;
+
+        for (int i = 0; i < names.size(); i++) {
+
+            if (names.get(i).toLowerCase().contains(search)) {
+
+                System.out.println(
+                    names.get(i) +
+                    " - Rs." + prices.get(i)
+                );
+
+                found = true;
+            }
+        }
+
+        if (!found) {
+            System.out.println("Product not found.");
+        }
+    }
+}
